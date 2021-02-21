@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0-alpha"
+description = "Automate the package deployment by referencing the TOML version furthermore updating the changelog from the latest release, update the python package version, tag, and commit changes."
+authors = ["robert vigorito <robertvigorito@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6.0,<4"
+PyYAML = "^5.4.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+# wg-src-tmp = "distro.module.module:function"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist = py35, py36, py37, py38, py39
+
+[testenv]
+whitelist_externals = poetry
+commands =
+    pip install -U pip
+    poetry install -v
+    poetry run pytest -s -rap tests
+"""
