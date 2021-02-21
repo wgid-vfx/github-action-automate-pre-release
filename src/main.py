@@ -39,7 +39,7 @@ for folder, sub_folder, files in os.walk(os.path.curdir):
 # Tag new repo based off the TOML version
 subprocess.run(["git", "tag", VERSION])
 subprocess.run(["git", "commit", "-am", f"Automate Release Update: {VERSION}"])
-subprocess.run(["git", "push", "--tags"])
+subprocess.run(["git", "push", "--all"])
 
 
 # Commit and push changes
