@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "src"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha.2"
 description = "Automate the package deployment by referencing the TOML version furthermore updating the changelog from the latest release, update the python package version, tag, and commit changes."
 authors = ["robert vigorito <robertvigorito@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.6.0,<4"
 PyYAML = "^5.4.1"
+toml = "^0.10.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"

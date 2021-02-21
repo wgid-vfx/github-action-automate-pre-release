@@ -1,0 +1,13 @@
+# action.yml
+name: Automate Prerelease
+author: Robert Vigorito
+description: "Automate the package deployment by referencing the TOML version furthermore updating the changelog from the latest release, update the python package version, tag, and commit changes."
+
+inputs:
+  changelog-filename:
+    description: "Name of the changelog file if not provided defaults to CHANGELOG.md"
+    required: False
+    default: "docs/CHANGELOG.md"
+runs:
+  using: "docker"
+  image: "Dockerfile"

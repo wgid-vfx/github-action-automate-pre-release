@@ -1,4 +1,4 @@
-# Automate Prelease
+# Automate Pre-Release
 [![Issues](https://img.shields.io/github/issues/wgid-vfx/deploy-unstable-develop.svg?style=for-the-badge)](https://github.com/wgid-vfx/deploy-unstable-develop/issues)
 [![MIT License](https://img.shields.io/github/license/wgid-vfx/deploy-unstable-develop.svg?style=for-the-badge)](https://github.com/wgid-vfx/blob/deploy-unstable-develop/develop/LICENSE)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://linkedin.com/in/robvigorito)
